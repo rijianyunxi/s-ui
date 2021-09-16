@@ -5,6 +5,7 @@ import ButtonGroup from "./button/Button-group.vue"
 import Input from "./Input.vue"
 import Col from "./layout/Col.vue"
 import Row from "./layout/Row.vue"
+import Upload from "./Upload.vue"
 
 
 const install = (Vue)=>{
@@ -14,6 +15,7 @@ const install = (Vue)=>{
     Vue.component(ButtonGroup.name,ButtonGroup);
     Vue.component(Col.name,Col);
     Vue.component(Row.name,Row);
+    Vue.component(Upload.name,Upload);
 }
 
 if(typeof (window.Vue) !== "undefind"){
