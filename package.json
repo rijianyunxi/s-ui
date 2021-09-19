@@ -6,10 +6,11 @@
     "dev": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lib":"vue-cli-service build --target lib --name s-ui ./src/packages/index.js"
+    "lib": "vue-cli-service build --target lib --name s-ui ./src/packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "echarts": "^5.2.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {

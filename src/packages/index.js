@@ -6,6 +6,7 @@ import Input from "./Input.vue"
 import Col from "./layout/Col.vue"
 import Row from "./layout/Row.vue"
 import Upload from "./Upload.vue"
+import Echarts from "./Echarts.vue"
 
 
 const install = (Vue)=>{
@@ -16,6 +17,7 @@ const install = (Vue)=>{
     Vue.component(Col.name,Col);
     Vue.component(Row.name,Row);
     Vue.component(Upload.name,Upload);
+    Vue.component(Echarts.name,Echarts);
 }
 
 if(typeof (window.Vue) !== "undefind"){
