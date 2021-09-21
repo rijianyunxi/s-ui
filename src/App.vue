@@ -153,11 +153,23 @@
       </s-row>
       <!--  -->
     </div>
+    <!--  -->
+    <h2>Swiper</h2>
+    <div class="myswiper">
+      <swiper>
+        <swiper-item>1</swiper-item>
+        <swiper-item>2</swiper-item>
+        <swiper-item>3</swiper-item>
+      </swiper>
+    </div>
   </div>
 </template>
 
 <script>
+import ShopList from '../../ele-app/src/components/ShopList.vue';
+import SwiperItem from './packages/swiper/Swiper-item.vue';
 export default {
+  components: { ShopList, SwiperItem },
   name: "App",
   data() {
     return {

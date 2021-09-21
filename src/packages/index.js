@@ -7,6 +7,8 @@ import Col from "./layout/Col.vue"
 import Row from "./layout/Row.vue"
 import Upload from "./Upload.vue"
 import Echarts from "./Echarts.vue"
+import Swiper from "./swiper/Swiper.vue"
+import SwiperItem from "./swiper/Swiper-item.vue"
 
 
 const install = (Vue)=>{
@@ -18,6 +20,8 @@ const install = (Vue)=>{
     Vue.component(Row.name,Row);
     Vue.component(Upload.name,Upload);
     Vue.component(Echarts.name,Echarts);
+    Vue.component(Swiper.name,Swiper);
+    Vue.component(SwiperItem.name,SwiperItem);
 }
 
 if(typeof (window.Vue) !== "undefind"){

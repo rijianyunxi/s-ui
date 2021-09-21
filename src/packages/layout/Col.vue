@@ -9,7 +9,7 @@ export default {
     name:"s-col",
     mounted(){
         // console.log(this.$options.name);
-        console.log(this.$parent.$children[0].$options);
+        // console.log(this.$parent.$children[0].$options);
     },
     props:{
         span:{
