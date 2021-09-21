@@ -277,7 +277,7 @@ export default {
 }
 h2 {
   margin: 40px 10px;
-  padding: 0 6px;
+  padding: 0 8px;
   border-left: 6px solid #409eff;
 }
 .r {

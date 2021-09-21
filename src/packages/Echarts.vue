@@ -28,7 +28,7 @@ export default {
     },
     data(){
         return{
-            uuid:""
+            uuid:"0"
         }
     },
     created(){

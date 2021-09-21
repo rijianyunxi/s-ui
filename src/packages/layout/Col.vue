@@ -7,6 +7,10 @@
 <script>
 export default {
     name:"s-col",
+    mounted(){
+        // console.log(this.$options.name);
+        console.log(this.$parent.$children[0].$options);
+    },
     props:{
         span:{
             type:Number,
@@ -35,12 +39,12 @@ export default {
 <style lang="scss">
     @for $i from 1 through 24{
         .s-col-#{$i}{
-            width: $i/24 * 100%;
+            width: ($i)/24 * 100%;
         }
     }
     @for $i from 1 through 24{
         .s-col-offset-#{$i}{
-            margin-left: $i/24 * 100%;
+            margin-left: ($i)/24 * 100%;
         }
     }
 </style>
