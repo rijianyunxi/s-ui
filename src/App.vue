@@ -18,6 +18,8 @@
         ></s-icon>
       </p>
     </div>
+    <h2>Calendar</h2>
+    <s-calendar ref="calendar" />
     <h2>Button</h2>
     <div class="btn">
       <s-button>默认按钮</s-button>
@@ -166,11 +168,16 @@
 </template>
 
 <script>
-import ShopList from '../../ele-app/src/components/ShopList.vue';
-import SwiperItem from './packages/swiper/Swiper-item.vue';
+import ShopList from "../../ele-app/src/components/ShopList.vue";
+import SwiperItem from "./packages/swiper/Swiper-item.vue";
 export default {
   components: { ShopList, SwiperItem },
   name: "App",
+  created(){
+    this.$nextTick(()=>{
+      console.log(this.$el);
+    })
+  },
   data() {
     return {
       a: "普通输入框",
